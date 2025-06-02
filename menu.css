@@ -1,0 +1,74 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: small;
+    line-height: 1.75em;
+    margin: 0% 15% 0;
+    background-color: #d2dc9d
+}
+
+header{
+    background-color: rgb(255,255,255)
+}
+
+h1{
+    font-family: "Marko One", Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #939;
+    text-shadow: .05em .05em .1em lightslategray;
+}
+h2{
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    color: #cc6600;
+}
+
+dt{
+    font-weight: bold;
+    color: sienna;
+}
+
+strong{
+    font-style: italic; 
+}
+
+dt strong{
+    color: tomato;
+}
+
+
+
+#info p{
+    font-style: italic;
+    color: gray
+}
+
+.price{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: gray;
+}
+
+.label{
+    font-weight: bold;
+    font-style: italic;
+    color: gray;
+}
+
+p.warning,sup{
+    font-size: small;
+    color: red;
+}
+
+h1,h2,#info{
+    text-align: center;
+}
+
+h2 + p{
+    text-align: center;
+    font-style: italic;
+}
+
+div h1:hover{
+    color: blue;
+}
