@@ -57,8 +57,21 @@ nav ul li {
   letter-spacing: .2em;
 }
 
+nav ul li a{
+  display: block;
+  border: 1px solid;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin: .5em;
+  
+}
+
 nav ul{
   margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
 header h1{
@@ -92,7 +105,24 @@ p.more {
   font-family: verdana, sans-serif;
   text-transform: uppercase;
   font-size: .8em;
+  clear: left;
 }
+
+main img{
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+img[src*="bread"] {
+  
+  shape-outside: circle(125px);
+ }
+
+ img[src*="muffin"] {
+  margin-left: 50px;
+  
+  shape-outside: circle(110px);
+ }
 
 /* aside "hours" styles */
 aside {
@@ -101,6 +131,8 @@ aside {
   padding: 1em;
   padding-left: 45px;
   border-top-right-radius: 25px;
+  float: right;
+  position: relative;
 }
 /* misc styles */
 footer {
@@ -108,6 +140,8 @@ footer {
   text-align: center;
   font-size: .8em;
   padding: 1em;
+  clear:right
+
 }
 h2 {
   font-family: 'Stint Ultra Expanded', cursive;
@@ -119,3 +153,9 @@ h2 {
   text-transform: uppercase;
 }
 
+
+#award{
+  position: fixed;
+  top:30px;
+  left: 50px;
+}
