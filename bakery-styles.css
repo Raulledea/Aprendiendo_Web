@@ -15,6 +15,31 @@ body {
   margin: 0;
 }
 
+#container{
+  display: grid;
+  grid-template-rows: auto auto 5em;
+  grid-template-columns: minmax(25em,1fr) 16em;
+  grid-template-areas:
+  "banner banner"
+  "main hours"
+  "footer footer"; 
+}
+
+header{
+  grid-area:banner
+}
+
+main{grid-area: main}
+
+aside{
+  grid-area: hours;
+
+}
+
+footer{
+  grid-area: footer;
+}
+
 /* link styles */
 a:link, a:visited { color: #DC6903; }
 a:focus, a:hover, a:active { color: #F9AB33; }
@@ -130,10 +155,13 @@ aside {
   background-color: #F6F3ED;
   padding: 1em;
   padding-left: 45px;
-  border-top-right-radius: 25px;
-  float: right;
+  /*border-top-right-radius: 25px;*/
   position: relative;
+  justify-self: right;
+  
 }
+
+
 /* misc styles */
 footer {
   color: #EADDC4;
